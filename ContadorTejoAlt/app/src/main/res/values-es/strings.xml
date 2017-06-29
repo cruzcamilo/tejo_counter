@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contador Tejo</string>
+    <string name="reset">Reiniciar</string>
+    <string name="TeamA">Equipo A</string>
+    <string name="TeamB">Equipo B</string>
+    <string name="Adjust">Ajuste (-1)</string>
+    <string name="pointsP">Puntos Por Juego</string>
+    <string name="newGame">Nuevo Juego</string>
+    <string name="adjustMa">Ajuste Mano</string>
+    <string name="adjustMe">Ajuste Mecha</string>
+</resources>

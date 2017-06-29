@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tejo Counter</string>
+    <string name="mano" translatable="false">Mano</string>
+    <string name="mecha" translatable="false">Mecha</string>
+    <string name="embocinada" translatable="false">Embocinada</string>
+    <string name="monona" translatable="false">Moñona</string>
+    <string name="manoS" translatable="false">Manos</string>
+    <string name="mechaS" translatable="false">Mechas</string>
+
+    <string name="adjustMa">Adjust \nMano</string>
+    <string name="adjustMe">Adjust \nMecha</string>
+    <string name="reset">Reset</string>
+    <string name="TeamA">Team A</string>
+    <string name="TeamB">Team B</string>
+    <string name="newGame">New Game</string>
+
+</resources>
