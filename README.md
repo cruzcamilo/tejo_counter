@@ -7,6 +7,10 @@ This app allows to keep track of a tejo match for two teams. First team to reach
 - Buttons for score adjustments in case there's a need to reduce score for any team.
 - Reset button to restart game and set score to 0.
 
+## Screenshot
+
+(tejo_counter/Screenshots/screenshot_english.png)
+
 <hr>
 
 # Contador de Tejo
