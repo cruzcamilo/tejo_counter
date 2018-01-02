@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="CounterBottomPadding">24dp</dimen>
+    <dimen name="TeamNamePadding">16dp</dimen>
+</resources>

@@ -5,20 +5,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#FDD835"
-    android:orientation="vertical"
+    android:background="@color/yellow"
     android:fillViewport="true"
+    android:orientation="vertical"
     tools:context="com.example.android.contadortejo.MainActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
+
         <LinearLayout
             android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="48dp">
+            android:layout_marginBottom="48dp"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -27,14 +28,8 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:gravity="center_horizontal"
-                    android:padding="16dp"
                     android:text="@string/TeamA"
-                    android:textColor="#616161"
-                    android:textSize="14sp" />
+                    style="@style/TeamName" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -42,24 +37,12 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="sans-serif-medium"
-                        android:gravity="center_horizontal"
                         android:text="@string/mechaS"
-                        android:textColor="#616161"
-                        android:textSize="14sp" />
+                        style="@style/CounterTitles"/>
 
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="sans-serif-medium"
-                        android:gravity="center_horizontal"
                         android:text="@string/manoS"
-                        android:textColor="#616161"
-                        android:textSize="14sp" />
+                        style="@style/CounterTitles" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -69,27 +52,13 @@
 
                     <TextView
                         android:id="@+id/team_a_scoreMe"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="sans-serif-light"
-                        android:gravity="center_horizontal"
-                        android:paddingBottom="24dp"
                         android:text="0"
-                        android:textColor="#000000"
-                        android:textSize="56sp" />
+                        style="@style/Counter" />
 
                     <TextView
                         android:id="@+id/team_a_scoreMa"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="sans-serif-light"
-                        android:gravity="center_horizontal"
-                        android:paddingBottom="24dp"
                         android:text="0"
-                        android:textColor="#000000"
-                        android:textSize="56sp" />
+                        style="@style/Counter"/>
                 </LinearLayout>
 
                 <Button
@@ -112,6 +81,7 @@
                     style="@style/button"
                     android:onClick="manoTeamA"
                     android:text="@string/mano" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -119,17 +89,13 @@
 
                     <Button
                         android:id="@+id/button"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
+                        style="@style/AdjustButtons"
                         android:onClick="adjusmentMeTeamA"
                         android:text="@string/adjustMe" />
 
                     <Button
                         android:id="@+id/button1"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
+                        style="@style/AdjustButtons"
                         android:onClick="adjusmentMaTeamA"
                         android:text="@string/adjustMa" />
                 </LinearLayout>
@@ -149,14 +115,8 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:gravity="center_horizontal"
-                    android:padding="16dp"
                     android:text="@string/TeamB"
-                    android:textColor="#616161"
-                    android:textSize="14sp" />
+                    style="@style/TeamName" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -164,24 +124,12 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="sans-serif-medium"
-                        android:gravity="center_horizontal"
                         android:text="@string/mechaS"
-                        android:textColor="#616161"
-                        android:textSize="14sp" />
+                        style="@style/CounterTitles" />
 
                     <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="sans-serif-medium"
-                        android:gravity="center_horizontal"
                         android:text="@string/manoS"
-                        android:textColor="#616161"
-                        android:textSize="14sp" />
+                        style="@style/CounterTitles"  />
                 </LinearLayout>
 
                 <LinearLayout
@@ -191,27 +139,13 @@
 
                     <TextView
                         android:id="@+id/team_b_scoreMe"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="sans-serif-light"
-                        android:gravity="center_horizontal"
-                        android:paddingBottom="24dp"
                         android:text="0"
-                        android:textColor="#000000"
-                        android:textSize="56sp" />
+                        style="@style/Counter"/>
 
                     <TextView
                         android:id="@+id/team_b_scoreMa"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="sans-serif-light"
-                        android:gravity="center_horizontal"
-                        android:paddingBottom="24dp"
                         android:text="0"
-                        android:textColor="#000000"
-                        android:textSize="56sp" />
+                        style="@style/Counter"/>
                 </LinearLayout>
 
                 <Button
@@ -240,21 +174,14 @@
                     android:orientation="horizontal">
 
                     <Button
-
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
                         android:onClick="adjusmentMeTeamB"
-                        android:text="@string/adjustMe" />
+                        android:text="@string/adjustMe"
+                        style="@style/AdjustButtons" />
 
                     <Button
-
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
+                        style="@style/AdjustButtons"
                         android:onClick="adjusmentMaTeamB"
                         android:text="@string/adjustMa" />
-
                 </LinearLayout>
 
             </LinearLayout>
@@ -268,9 +195,8 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="22dp"
-            android:layout_marginRight="22dp"
-            android:background="#F44336"
+            android:gravity="center"
+            android:background="@color/red"
             android:onClick="reset"
             android:text="@string/reset"
             android:textAllCaps="true" />

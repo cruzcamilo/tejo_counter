@@ -13,23 +13,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        displayMechaForTeamA(scoreMeTeamA);
-        displayMechaForTeamB(scoreMeTeamB);
+        displayMechaForTeamA(scoreMechaTeamA);
+        displayMechaForTeamB(scoreMechaTeamB);
     }
 
-    int scoreMeTeamA = 0;
-    int scoreMaTeamA = 0;
-    int scoreMeTeamB = 0;
-    int scoreMaTeamB = 0;
-    int maxScore = 27;
+    private int scoreMechaTeamA = 0;
+    private int scoreManoTeamA = 0;
+    private int scoreMechaTeamB = 0;
+    private int scoreManoTeamB = 0;
+    private int maxScore = 27;
 
     /**
      * Increase score for Team A by 9 points.
      */
     public void threeMechasTeamA(View v) {
-        if (scoreMeTeamA < maxScore) {
-            scoreMeTeamA += 3;
-            displayMechaForTeamA(scoreMeTeamA);
+        if (scoreMechaTeamA < maxScore) {
+            scoreMechaTeamA += 3;
+            displayMechaForTeamA(scoreMechaTeamA);
             manoClear();
         }
     }
@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
      * Increase score for Team A by 6 points.
      */
     public void twoMechasTeamA(View v) {
-        if (scoreMeTeamA < maxScore) {
-            scoreMeTeamA += 2;
-            displayMechaForTeamA(scoreMeTeamA);
+        if (scoreMechaTeamA < maxScore) {
+            scoreMechaTeamA += 2;
+            displayMechaForTeamA(scoreMechaTeamA);
             manoClear();
         }
     }
@@ -49,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
      * Increase score for Team A by 3 point.
      */
     public void mechaTeamA(View v) {
-        if (scoreMeTeamA < maxScore) {
-            scoreMeTeamA += 1;
-            displayMechaForTeamA(scoreMeTeamA);
+        if (scoreMechaTeamA < maxScore) {
+            scoreMechaTeamA += 1;
+            displayMechaForTeamA(scoreMechaTeamA);
             manoClear();
         }
 
@@ -61,14 +61,14 @@ public class MainActivity extends AppCompatActivity {
      * Increase score for Team A by 1 point.
      */
     public void manoTeamA(View v) {
-        scoreMaTeamA += 1;
-        if (scoreMeTeamA < maxScore) {
-            if (scoreMaTeamA < 3) {
-                displayManoForTeamA(scoreMaTeamA);
+        scoreManoTeamA += 1;
+        if (scoreMechaTeamA < maxScore) {
+            if (scoreManoTeamA < 3) {
+                displayManoForTeamA(scoreManoTeamA);
             } else {
                 manoClear();
-                scoreMeTeamA += 1;
-                displayMechaForTeamA(scoreMeTeamA);
+                scoreMechaTeamA += 1;
+                displayMechaForTeamA(scoreMechaTeamA);
             }
         }
     }
@@ -77,9 +77,9 @@ public class MainActivity extends AppCompatActivity {
      * Decrease Mecha score for Team A by 1 point.
      */
     public void adjusmentMeTeamA(View v) {
-        if (scoreMeTeamA > 0) {
-            scoreMeTeamA -= 1;
-            displayMechaForTeamA(scoreMeTeamA);
+        if (scoreMechaTeamA > 0) {
+            scoreMechaTeamA -= 1;
+            displayMechaForTeamA(scoreMechaTeamA);
         }
     }
 
@@ -87,9 +87,9 @@ public class MainActivity extends AppCompatActivity {
      * Decrease Mano score for Team A by 1 point.
      */
     public void adjusmentMaTeamA(View v) {
-        if (scoreMaTeamA > 0) {
-            scoreMaTeamA -= 1;
-            displayManoForTeamA(scoreMaTeamA);
+        if (scoreManoTeamA > 0) {
+            scoreManoTeamA -= 1;
+            displayManoForTeamA(scoreManoTeamA);
         }
     }
 
@@ -98,9 +98,9 @@ public class MainActivity extends AppCompatActivity {
     * Increase score for Team B by 9 points.
     */
     public void threeMechasTeamB(View v) {
-        if (scoreMeTeamB < maxScore) {
-            scoreMeTeamB += 3;
-            displayMechaForTeamB(scoreMeTeamB);
+        if (scoreMechaTeamB < maxScore) {
+            scoreMechaTeamB += 3;
+            displayMechaForTeamB(scoreMechaTeamB);
             manoClear();
         }
     }
@@ -110,9 +110,9 @@ public class MainActivity extends AppCompatActivity {
     */
 
     public void twoMechasTeamB(View v) {
-        if (scoreMeTeamB < maxScore) {
-            scoreMeTeamB += 2;
-            displayMechaForTeamB(scoreMeTeamB);
+        if (scoreMechaTeamB < maxScore) {
+            scoreMechaTeamB += 2;
+            displayMechaForTeamB(scoreMechaTeamB);
             manoClear();
         }
     }
@@ -121,9 +121,9 @@ public class MainActivity extends AppCompatActivity {
     * Increase score for Team B by 3 points.
     */
     public void mechaTeamB(View v) {
-        if (scoreMeTeamB < maxScore) {
-            scoreMeTeamB += 1;
-            displayMechaForTeamB(scoreMeTeamB);
+        if (scoreMechaTeamB < maxScore) {
+            scoreMechaTeamB += 1;
+            displayMechaForTeamB(scoreMechaTeamB);
             manoClear();
         }
     }
@@ -132,15 +132,15 @@ public class MainActivity extends AppCompatActivity {
      * Increase score for Team B by 1 point.
      */
     public void manoTeamB(View v) {
-        scoreMaTeamB += 1;
+        scoreManoTeamB += 1;
 
-        if (scoreMeTeamB < maxScore) {
-            if (scoreMaTeamB < 3) {
-                displayManoForTeamB(scoreMaTeamB);
+        if (scoreMechaTeamB < maxScore) {
+            if (scoreManoTeamB < 3) {
+                displayManoForTeamB(scoreManoTeamB);
             } else {
                 manoClear();
-                scoreMeTeamB += 1;
-                displayMechaForTeamB(scoreMeTeamB);
+                scoreMechaTeamB += 1;
+                displayMechaForTeamB(scoreMechaTeamB);
             }
         }
     }
@@ -149,9 +149,9 @@ public class MainActivity extends AppCompatActivity {
      * Decrease score for Mechas Team B by 1 point.
      */
     public void adjusmentMeTeamB(View v) {
-        if (scoreMeTeamB > 0) {
-            scoreMeTeamB -= 1;
-            displayMechaForTeamB(scoreMeTeamB);
+        if (scoreMechaTeamB > 0) {
+            scoreMechaTeamB -= 1;
+            displayMechaForTeamB(scoreMechaTeamB);
         }
     }
 
@@ -159,36 +159,36 @@ public class MainActivity extends AppCompatActivity {
      * Decrease score for Manos Team B by 1 point.
      */
     public void adjusmentMaTeamB(View v) {
-        if (scoreMaTeamB > 0) {
-            scoreMaTeamB -= 1;
-            displayManoForTeamB(scoreMaTeamB);
+        if (scoreManoTeamB > 0) {
+            scoreManoTeamB -= 1;
+            displayManoForTeamB(scoreManoTeamB);
         }
     }
 
     /*
-    * Clear manos's counter from both teams.
+    * Clear manos counter from both teams.
     * */
     public void manoClear() {
-        scoreMaTeamA = 0;
-        scoreMaTeamB = 0;
+        scoreManoTeamA = 0;
+        scoreManoTeamB = 0;
         TextView scoreViewA = (TextView) findViewById(R.id.team_a_scoreMa);
         TextView scoreViewB = (TextView) findViewById(R.id.team_b_scoreMa);
-        scoreViewA.setText(String.valueOf(scoreMaTeamA));
-        scoreViewB.setText(String.valueOf(scoreMaTeamB));
+        scoreViewA.setText(String.valueOf(scoreManoTeamA));
+        scoreViewB.setText(String.valueOf(scoreManoTeamB));
     }
 
     /*
-    * Reset counters for both teams, score color, and restet button message.
+    * Reset counters for both teams, score color, and reset button message.
     * */
     public void reset(View v) {
-        scoreMeTeamA = 0;
-        scoreMeTeamB = 0;
-        scoreMaTeamA = 0;
-        scoreMaTeamB = 0;
-        displayMechaForTeamA(scoreMeTeamA);
-        displayMechaForTeamB(scoreMeTeamB);
-        displayManoForTeamA(scoreMaTeamA);
-        displayManoForTeamB(scoreMaTeamB);
+        scoreMechaTeamA = 0;
+        scoreMechaTeamB = 0;
+        scoreManoTeamA = 0;
+        scoreManoTeamB = 0;
+        displayMechaForTeamA(scoreMechaTeamA);
+        displayMechaForTeamB(scoreMechaTeamB);
+        displayManoForTeamA(scoreManoTeamA);
+        displayManoForTeamB(scoreManoTeamB);
         TextView scoreMeViewA = (TextView) findViewById(R.id.team_a_scoreMe);
         TextView scoreMeViewB = (TextView) findViewById(R.id.team_b_scoreMe);
         TextView scoreMaViewA = (TextView) findViewById(R.id.team_a_scoreMa);
