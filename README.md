@@ -15,7 +15,7 @@ This app allows to keep track of a tejo match for two teams. First team to reach
 
 # Contador de Tejo
 
-Esta aplicación permite llevar el puntaje en un partido de tejo para dos equipos jugando a 27 puntos.
+Esta aplicación permite llevar registro del puntaje en un partido de tejo para dos equipos jugando a 27 puntos.
 
 ## Características
 
